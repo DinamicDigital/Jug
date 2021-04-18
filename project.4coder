@@ -1,0 +1,30 @@
+version(1);
+
+project_name = "Jug";
+
+patterns = {
+	"*.c",
+	"*.cpp",
+	"*.h",
+	"*.hpp",
+	"*.vs",
+	"*.fs",
+	"*.bat",
+	"*.sh",
+	"*.4coder",
+	"*.jug"
+};
+
+blacklist_patterns = {
+	".*",
+};
+
+load_paths = {
+	{
+		{
+			{ "./src", .recursive = true, .relative = true },
+			{ "./bin", .recursive = true, .relative = true }
+		},
+		.os = "win"
+	},
+};
