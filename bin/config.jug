@@ -1,1 +1,2 @@
-egg = [int, 14];
+# This is a comment
+egg[int, 14];
