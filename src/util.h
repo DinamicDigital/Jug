@@ -8,7 +8,7 @@ char* read_entire_file(char* file)
     if (!source_file)
     {
         perror("read_entire_file: ");
-        return 0;
+        return 0; // Will cause segfault. 
     }
     fseek(source_file, 0, SEEK_END);
     long src_size = ftell(source_file);

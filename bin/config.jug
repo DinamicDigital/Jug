@@ -1,2 +1,5 @@
 # This is a comment
+# Set the variable name 'egg' to an integer of 14
 egg[int, 14];
+# Another Variable.
+sandwich[char, 'S'];
